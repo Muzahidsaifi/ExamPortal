@@ -1,0 +1,255 @@
+*{
+	margin: 0 auto;
+	padding: 0;
+	font-family:sans-serif;
+}
+#regOuter{
+	min-height: 300px;
+	width: 300px;
+	margin: 50px auto;
+	background: white;
+	padding:20px;
+}
+#regOuter h2{
+	text-align: center;
+}
+#regOuter p{
+	text-align: center;
+	color: gray;
+	font-size: 12px;
+	margin: 10px auto;
+}
+#regOuter label{
+	font-size:15px;
+}
+#regOuter input{
+	height: 25px;
+	width: 100%;
+	border-radius: 5px;
+	margin-bottom: 10px;
+	border: 1px solid silver;
+	font-size: 13px;
+	padding-left: 10px;
+	box-sizing: border-box;
+}
+#regOuter input[type="submit"]{
+	color: white;
+	background:#49c1a2;
+	cursor: pointer;
+	width:100px;
+	height:30px;
+	margin-left:35%;
+}	
+
+#mainpage{
+	height: 100vh;
+	box-sizing: border-box;
+}
+.action{
+	height: 40px;
+	width: 100%;
+	background-color: #669bbb;
+	position: sticky;
+	box-sizing: border-box;
+	top:0px;
+	color:white;
+	padding:0px 15px;
+	line-height:40px;
+	font-size:20px;
+	display:flex;
+	
+}
+.action>div,.action>input{
+	padding:0px 10px;
+}
+#questionPage{
+	height: 87vh;
+	background-color: #bfe9e8;
+	display: flex;
+}
+#questionPage>div:first-child{
+	width: 75%;
+	height: 100%;
+	padding: 30px;
+	box-sizing: border-box;
+	/*border-right: 1px solid gray;*/
+	background-color: white;
+	overflow-y:scroll;
+}
+#questionPage>div:last-child{
+	width: 25%;
+	height: 100px;
+	padding: 10px;
+	box-sizing: border-box;
+	/*display: flex;
+	flex-wrap: wrap;*/
+}
+#questionPage>div:last-child>a{
+	text-decoration: none;
+	color:black;
+	float:left;
+}
+#questionPage>div:last-child>a>div{
+	height: 30px;
+	width: 30px;
+	background-color:white;
+	border:.5px solid gray;
+	text-align: center;
+	line-height: 30px;
+	margin:4px;
+}
+
+
+#questionPage>div:first-child>ol>li{
+	margin-left: 40px;
+	margin-bottom: 20px;
+}
+#questionPage>div:first-child>ol>li>ul{
+	margin-left: 40px;
+	margin-top: 15px;
+	line-height: 30px;
+	list-style: none;
+}
+
+#cpanelmain>header{
+	height: 40px;
+	background-color: #669bbb;
+	position: sticky;
+	top: 0px;
+	color: white;
+	font-size: 16px;
+	line-height: 40px;
+	text-align: center;
+	font-weight: bold;
+	display:flex;
+}
+
+#cpanelmain>header a{
+	color:white;
+	text-decoration:none;
+}
+#cpanellogin{
+	height: 100vh;
+	width:100%;
+	background-color:#8dabc4;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#cpanellogin>div{
+	min-height: 200px;
+	width:250px;
+	background-color: white;
+	border-radius: 10px;
+	padding: 15px;
+	box-sizing: border-box;
+}
+#cpanellogin>div label{
+	display: block;
+}
+#cpanellogin>div input{
+	width: 100%;
+	margin: 5px 0;
+	height: 25px;
+	border-radius: 5px;
+	padding-left: 10px;
+	box-sizing: border-box;
+
+	}
+#viewusers{
+	max-height:500px;
+	width:650px;
+	background-color:lightgreen;
+	position:fixed;
+	z-index:2;
+	top:40px;
+	padding:10px;
+	right:200px;
+	overflow-y:scroll;
+	border:1px solid black;
+	display:none;
+	
+	}
+#cpanelmain>header>div:last-child{
+	display:flex;
+	}
+#cpanelmain>header>div:last-child input[type="number"]{
+	height:25px;
+	width:30px;
+	padding-left:5px;
+	color:red;
+	background-color:white;
+	font-weight:bold;
+	}
+#cpanelmain table{
+	border-collapse: collapse;
+	width: 98%;
+	margin-top: 15px;
+	background-color: #fefee4;
+}
+#cpanelmain>table textarea{
+	width:100%;
+	resize:none;
+	min-height:70px;
+	padding:5px;
+	box-sizing:border-box;
+	border:none;
+}
+#cpanelmain>table td a{
+	text-decoration:none;
+	color:black;
+}
+
+#cpanelmain table td>button,#cpanelmain>table td>input{
+	display: block;
+	width: 95%;
+	margin:5px auto;
+	height: 30px;
+}
+#cpanelmain #formsection{
+	min-height:300px;
+	width:300px;
+	padding:10px;
+	position: fixed;
+	background-color:red;
+	z-index:1;
+	left:38%;
+}
+#cpanelmain #formsection label{
+	display:block;
+}
+#cpanelmain #formsection textarea{
+	width:100%;
+	resize:none;
+}
+#statusmain{
+margin-top:25vh;
+width:30%;
+min-height:200px;
+
+}
+.statusbox{
+	width:300px;
+	height:50px;
+	text-align:center;
+	line-height:50px;
+	color:white;
+}
+.statusbox>span{
+height:50px;
+width:50px;
+border:1px solid white;
+line-height:50px;
+padding:5px;
+margin-left:10px;
+font-weight:bold;
+}
+.warnig{
+	height:100vh;
+	width:100%;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	background-color:#fae99f;
+	color:red;
+}
